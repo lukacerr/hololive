@@ -1,0 +1,118 @@
+/* ------------------------------------------------------------ 
+-------------------- LIGHTMODE -------------------- 
+------------------------------------------------------------ */
+
+// body
+$body_background-color: #74cfe2 !default;
+
+// nav
+$nav_hover-color: #49c8f0 !default;
+$nav_bottomBorder-color: rgb(183, 183, 183) !default;
+$nav_bottomBorder-shadow: 0 4px 8px 0px rgba(127,127,127,0.375);
+$navMobile_background-color: white !default;
+$navMobile_border-color: rgba(0, 0, 0, 0.5) !default;
+$navMobile_link-color: #2f3c4d !default;
+$navMobile_themeImage-invert: invert(0.125) !default;
+$navMobile_dropdown_bgColor: white !default; 
+$nav_background-color: white !default;
+$nav_link-color: white !default;
+$nav_link-shadow: 0 1px 1px rgba(0,0,0,.2) !default;
+$nav-themeImage-invert: invert(0.975);
+$nav-dropdown-color: black !default;
+$navScroll-text-color: #2f3c4d !default;
+$navScroll-themeImage-invert: invert(0.225) !default;
+
+// INDEX -- ACTIVITIES (CAROUSEL/SLIDESHOW)
+$indexActivities_bg-opacity: 0.1 !default;
+$indexActivities_frames-border: 1px solid rgb(110, 110, 110) !default;
+$indexActivities_frames-opacity: 0.925 !default;
+$indexActivities_title-color: white !default;
+$indexActivities_subtitle-color: white !default;
+$indexActivities_subtitle-opacity: 0.85 !default;
+$indexActivities_text-color: white !default;
+$indexActivities_button-color: white !default;
+
+// INDEX -- GRIDCARDS (TALENTS)
+$indexGrid_bg-color: white !default;
+$indexGrid_bgImage-opacity: 0.138125 !default;
+$indexGridMain_title-color: #74cfe2 !default;
+$indexGridMain_subtitle-color: #62686f !default;
+$indexGridCard_title-color: #74cfe2 !default;
+$indexGridCard_subtitle-color: #62686f !default;
+$indexGridCard_border-color: rgb(170, 170, 170) !default;
+$indexGridCard_image-opacity: 0.9625 !default;
+$indexGridCard_bodyBg-color: white !default;
+
+// INDEX -- HOLOLY
+$indexHololy_text-color: white !default;
+$indexHololy_background-blackOpacity: 0.55 !default;
+
+// INDEX -- CORP
+$indexCorp_title-color: white !default;
+$indexCorp_bg-color: rgb(95, 95, 95) !default;
+$indexCorp_text-color: #74cfe2 !default;
+$indexCorp_imageHover-opacity: 0.2125 !default;
+$indexCorpPC_image-opacity: 0.975 !default;
+
+// footer
+$footer_background-color: white !default;
+$footer_text-color: rgb(20, 20, 20) !default;
+
+/* ------------------------------------------------------------ 
+-------------------- DARKMODE -------------------- 
+------------------------------------------------------------ */
+// body
+$d--body_background-color: #02152e !default;
+
+// nav
+$d--nav_hover-color: #a8ccfc;
+$d--nav_bottomBorder-color: rgba(10, 10, 10, .375) !default;
+$d--nav_bottomBorder-shadow: 0 4px 8px 0px rgba(10, 10, 10, .375) !default;
+$d--navMobile_background-color: rgb(20, 20, 20) !default;
+$d--navMobile_border-color: rgba(255, 255, 255, .625) !default;
+$d--navMobile_link-color: rgb(215, 215, 215)!default;
+$d--navMobile_themeImage-invert: invert(0.9) !default;
+$d--navMobile_dropdown_bgColor: rgb(40, 40, 40) !default; 
+$d--nav_background-color: rgb(20, 20, 20) !default;
+$d--nav_link-color: rgb(225, 225, 225) !default;
+$d--nav_link-shadow: 0 1px 1px rgba(0,0,0,.2) !default;
+$d--nav-themeImage-invert: invert(0.9) !default;
+$d--nav-dropdown-color: rgb(215, 215, 215) !default;
+$d--navScroll-text-color: rgb(222, 222, 222) !default;
+$d--navScroll-themeImage-invert: invert(0.875) !default;
+
+// INDEX -- ACTIVITIES (CAROUSEL/SLIDESHOW)
+$d--indexActivities_bg-opacity: 0.0825 !default;
+$d--indexActivities_frames-border: 1px solid black !default;
+$d--indexActivities_frames-opacity: 0.925 !default;
+$d--indexActivities_title-color: rgb(205, 205, 205) !default;
+$d--indexActivities_subtitle-color: rgb(220, 220, 220) !default;
+$d--indexActivities_subtitle-opacity: 0.65 !default;
+$d--indexActivities_text-color: rgba(210, 210, 210,0.930125) !default;
+$d--indexActivities_button-color: rgb(205, 205, 205) !default;
+
+// INDEX -- GRIDCARDS (TALENTS)
+$d--indexGrid_bg-color: #111111 !default;
+$d--indexGrid_bgImage-opacity: 0.1 !default;
+$d--indexGridMain_title-color: #a8ccfc !default;
+$d--indexGridMain_subtitle-color: #becad2 !default;
+$d--indexGridCard_title-color: #a8ccfc !default;
+$d--indexGridCard_subtitle-color: rgba(190, 202, 210, 0.9) !default;
+$d--indexGridCard_border-color: black !default;
+$d--indexGridCard_image-opacity: 0.875 !default;
+$d--indexGridCard_bodyBg-color: rgb(5, 5, 5) !default;
+
+// INDEX -- HOLOLY
+$d--indexHololy_text-color: rgb(222, 222, 222) !default;
+$d--indexHololy_background-blackOpacity: 0.65 !default;
+
+// INDEX -- CORP
+$d--indexCorp_title-color: rgb(212, 212, 212) !default;
+$d--indexCorp_bg-color: rgb(60, 60, 60) !default;
+$d--indexCorp_text-color: #a8ccfc !default;
+$d--indexCorp_imageHover-opacity: 0.2125 !default;
+$d--indexCorpPC_image-opacity: 0.9125 !default;
+
+// footer
+$d--footer_background-color: rgb(20, 20, 20) !default;
+$d--footer_text-color: rgb(225, 225, 225) !default;

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <meta name="author" content="Luka Cerrutti">
+    <link rel="icon" type="image/jpg" href="../assets/icon.png"/>
+    <meta name="keywords" content="Hololive, Holostars, INoNaKa MUSIC, Hololy, Vtuber, VTalents, Idol, Idols, Virtual, Virtual idol, Virtual talent, Japan, Japanese, YouTube, Bilibili">  
+    <meta name="description" content="The official site for the worldwide VTuber & virtual idol agency 'Hololive Production' owned by Japanese tech entertainment company Cover Corporation.">
+    <title>Hololive Producciones</title> 
+</head>
+<body class="animate__animated animate__fadeIn">
+  <div class="wow animate__animated animate__fadeInDown">
+    <header>
+      <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">
+              <img src="../assets/logo.svg" alt="hololive" id="logo" height="64">
+          </a>              
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: calc(100vh - calc(64px * 2.125));">
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://en.hololive.tv/audition/">Audiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://schedule.hololive.tv/">Horarios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#hololy">Hololy</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTalents" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Talentos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownTalents">
+                    <li><a class="dropdown-item" href="#">INoNaKa MUSIC</a></li>
+                    <li><a class="dropdown-item" href="#">Hololive</a></li>
+                    <li><a class="dropdown-item" href="#">Hololive-EN</a></li>
+                    <li><a class="dropdown-item" href="#">Hololive-ID</a></li>
+                    <li><a class="dropdown-item" href="#">Holostars</a></li>
+                  </ul>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre Cover</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ES <img height="24" src="../assets/flags/es.png" alt="es">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                      <li><a class="dropdown-item" href="#"><img height="15" src="../assets/flags/es.png" alt="es"> Español</a></li>
+                      <li><a class="dropdown-item" href="../index.html"><img height="15" src="../assets/flags/gb.png" alt="en"> English</a></li>
+                      <li><a class="dropdown-item" href="../jp/index.html"><img height="15" src="../assets/flags/jp.png" alt="jp"> 日本語</a></li>      
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a title="Cambiar tema" class="nav-link">
+                      <div class="btn-toggle">
+                        <img src="../assets/theme.png" alt="Cambiar tema">
+                        <span> Cambiar tema </span> 
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+          </div>
+      </nav>
+
+      <div class="initial">
+        <video autoplay muted loop src="../assets/index/video.mp4"></video>
+      </div>
+  </header>
+  </div>
+
+  <section class="initial">
+    <article>
+      <div class="wow animate__animated animate__fadeIn animate__delay-0675s">
+        <img src="../assets/icon.png" alt="icon">
+        <div class="initial--textWrapper">    
+          <h1>"PROYECTO HOLOLIVE"</h1>
+          <h2>¡Agencia VTuber de Japón que enloquece a los fans, en todo el mundo!</h2> 
+        </div>
+      </div>
+    </article>
+  </section>
+
+    <section class="activities">
+      <div id="divCarousel" class="carousel slide" data-bs-interval="false">
+        <div class="wow animate__animated animate__fadeInUp">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#divCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#divCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#divCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#divCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          </div>
+          <div class="carousel-inner">
+            <article class="carousel-item active">
+              <div class="item-video">
+                <h2>"Holo no Graffiti"</h2>
+                <h3>¡La serie animada "holo no graffiti" recibe actualizaciones semanales!</h3>
+                <div class="ratio ratio-16x9 itemVideoFrameWrapper">
+                  <!--<iframe src="https://www.youtube.com/embed/wj9GO6F0pOM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                </div>  
+                <p>Animación corta "Holo no Gurafiti" que representa la vida diaria de VTuber perteneciente 
+                  a Hololive High School, niñas, robots, kemonomimi, del mundo de los demonios y elfos de 
+                  otro mundo están inscritos. Es una oficina ridícula cuando piensas con calma. 
+                  ¿Quién tiene más secretos? ¡Estoy muy feliz de escuchar tus impresiones con #Hologura!
+                </p>  
+              </div>
+            </article>
+            <article class="carousel-item">
+              <div class="item-auditions">   
+                <div class="itemAuditionsTextWrapper">
+                  <h2>Audiciones VTuber</h2>
+                  <p>La agencia de VTuber "Hololive Production" actualmente no está realizando audiciones 
+                    para aquellos que tienen experiencia en distribución de contenido (juegos, canciones, creadores) 
+                    y les gustaría desafiarse a sí mismos como VTuber proporcionando la base para un personaje original 
+                    para apoyar sus actividades de VTuber. ¡Estén atentos para cuando abramos la próxima ronda de audiciones!</p>
+                  <a target="_blank" href="https://en.hololive.tv/audition/"><button type="button">Más Información</button></a>
+                </div>
+                <div class="itemAuditionsFrameWrapper">
+                  <img src="../assets/index/auditions.jpg" alt="audiciones">
+                </div>
+              </div>
+            </article>
+            <article class="carousel-item">
+              <div class="item-video">
+                <h2>"Shiny Smily Story"</h2>
+                <h3>La primer canción original de Hololive, "Shiny Smily Story".</h3>
+                <div class="ratio ratio-16x9 itemVideoFrameWrapper">
+                  <!--<iframe src="https://www.youtube.com/embed/RrsGNMMghKM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+                </div>  
+                <p>Esta canción, que tiene sonidos brillantes, pop y enérgicos en las letras que 
+                  describen las actividades y sentimientos de cada sueño, es una canción que se 
+                  puede decir que es el tema principal de Hololive con diversos talentos de afiliación...</p>  
+              </div>
+            </article>
+            <article class="carousel-item">
+              <div class="item-video">
+                <h2>"Canción original de AZKi, "Inochi" (vida)"</h2>
+                <h3>Canción de fondo utilizada en la colaboración Hololive x Azur Lane.</h3>
+                <div class="ratio ratio-16x9 itemVideoFrameWrapper">
+                  <!--<iframe src="https://www.youtube.com/embed/-VQx0MtsvSQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--> 
+                </div>  
+                <p>
+                  <i>"Pensé mucho en la vida a través de esta canción. Háblame de la vida de todos..."</i> 
+                </p>  
+              </div>
+            </article>
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#divCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+
+          <button class="carousel-control-next" type="button" data-bs-target="#divCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </div>
+
+
+    </section>
+
+    <section class="gridcards">
+      <div class="gridcardsWrapper">
+        <div class="wow animate__animated animate__fadeInUp gridcards_mainWrapper">
+          <h2>Nuestros Talentos</h2>
+          <h3>Con mas de 4.4 millones de seguidores en YouTube y más de 4 millones en
+            BiliBili, somos una agencia VTuber popular, no solo en Japón, también en China.
+            Próxima parada: ¡El mundo!
+          </h3>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="wow animate__animated animate__fadeInUp card">
+              <a title="Hololive-JP" href="#">
+                <div class="imageWrapper">
+                  <img src="../assets/index/gridcards/hololive_jp.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h2>Hololive</h2>
+                  <h4>Equipo VTuber japonés.</h4>
+                </div>
+              </a>
+          </article>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="wow animate__animated animate__fadeInUp card">
+              <a title="Hololive-EN" href="#">
+                <div class="imageWrapper">
+                  <img src="../assets/index/gridcards/hololive_en.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h2>Hololive-EN</h2>
+                  <h4>Equipo VTuber inglés.</h4>
+                </div>
+              </a>
+          </article>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="wow animate__animated animate__fadeInUp card">
+              <a title="Hololive-ID" href="#">
+                <div class="imageWrapper">
+                  <img src="../assets/index/gridcards/hololive_id.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h2>Hololive-ID</h2>
+                  <h4>Equipo VTuber indonesio.</h4>
+                </div>
+              </a>
+          </article>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="wow animate__animated animate__fadeInUp card">
+              <a title="INoNaKa MUSIC" href="#">
+                <div class="imageWrapper">
+                  <img src="../assets/index/gridcards/inonaka_music.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h2>INoNaKa MUSIC</h2>
+                  <h4>Sello musical bajo la producción de Hololive lanzado el 19 de mayo de 2019.</h4>
+                </div>
+              </a>
+          </article>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <article class="wow animate__animated animate__fadeInUp card">
+              <a title="Holostars" href="#">
+                <div class="imageWrapper">
+                  <img src="../assets/index/gridcards/holostars.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                  <h2>Holostars</h2>
+                  <h4>Grupo Vtuber masculino de Hololive Production, inicialmente operando bajo una agencia separada.</h4>
+                </div>
+              </a>
+          </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="hololy">
+      <span class="anchorfix" id="hololy"></span>
+      <article class="wow animate__animated animate__fadeInUp hololyWrapper">
+        <div class="infoWrapper">
+          <h2>"Hololy", La aplicación de smartphones para pasar tiempo con tu VTuber Hololive favorito.</h2>
+          <div class="wow animate__animated animate__fadeInUp appWrapper">
+            <a title="App Store" target="_blank" href="https://apps.apple.com/jp/app/id1459233516">
+              <img src="../assets/index/app_store.png" alt="App Store">
+            </a>
+            <a title="Google Play" target="_blank" href="https://play.google.com/store/apps/details?id=tv.hololive.life">
+              <img src="../assets/index/google_play.png" alt="Google Play">
+            </a>
+          </div>
+        </div>
+          <img src="../assets/index/hololy.gif" alt="img">
+      </article>
+    </section>
+
+    <section class="corp">
+      <div class="wow animate__animated animate__fadeInUp corpWrapper">
+        <article class="coverCorp">
+          <h2>Empresa gestora</h2>
+          <a title="Cover Corp" target="_blank" href="https://cover-corp.com/"><img src="../assets/cover_logo.png" alt="Cover Corp"></a>
+        </article>
+        <article class="auditions">
+          <h2>Audiciones VTuber</h2>
+          <a title="Auditions" target="_blank" href="https://en.hololive.tv/audition/">
+            <img src="../assets/index/auditions.jpg" alt="Auditions">
+            <h3>¡Audiciona!</h3>
+          </a>
+        </article>
+        <article class="holoagenda">
+          <h2>Horarios (Holoagenda)</h2>
+          <a title="Holoagenda" target="_blank" href="https://schedule.hololive.tv/">
+            <img src="../assets/index/holoagenda.png" alt="Holoagenda">
+            <h3>Agenda VTuber</h3>
+          </a>    
+        </article>
+      </div>
+    </section>
+
+    <footer>
+        <div class="footerContent">
+            <h3 class="wow animate__animated animate__fadeInUp">Ⓒ 2016 COVER Corp.</h3>   
+            <div class="wow animate__animated animate__fadeInUp footer--socialWrapper">
+            <a title="Bilibili" target="_blank" href="https://space.bilibili.com/286700005"><img src="../assets/social/bilibili.png" alt="Bilibili"></a>
+            <a title="Facebook" target="_blank" href="https://www.facebook.com/hololivetv/"><img src="../assets/social/facebook.png" alt="Facebook"></a>
+            <a title="Reddit" target="_blank" href="https://www.reddit.com/r/Hololive/"><img src="../assets/social/reddit.png" alt="Reddit"></a>
+            <a title="Twitter" target="_blank" href="https://twitter.com/hololivetv/"><img src="../assets/social/twitter.png" alt="Twitter"></a>
+            <a title="YouTube" target="_blank" href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg/"><img src="../assets/social/youtube.png" alt="YouTube"></a>
+            </div>      
+        </div>    
+    </footer>   
+
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/popper/popper.min.js"></script>
+    <script src="../js/wow/wow.min.js"></script> 
+    <script src="../js/script.js"></script>
+</body>
+</html>
