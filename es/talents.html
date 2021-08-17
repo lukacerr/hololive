@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/talents.css">
+
+    <meta name="author" content="Luka Cerrutti">
+    <link rel="icon" type="image/jpg" href="../assets/icon.png"/>
+    <meta name="keywords" content="Hololive, Holostars, INoNaKa MUSIC, Hololy, Vtuber, VTalents, Idol, Idols, Virtual, Virtual idol, Virtual talent, Japan, Japanese, YouTube, Bilibili">  
+    <meta name="description" content="Vea todos los talentos virtuales (incluidos VTubers, ídolos, etc.) que Hololive Production tiene aquí, en el sitio web oficial de Hololive Productions.">
+    <title>Talentos - Hololive Producciones</title>
+</head>
+<body class="animate__animated animate__fadeIn">
+  <div class="body--background"></div>
+  <div class="wow animate__animated animate__fadeInDown">
+    <header>
+      <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">
+              <img src="../assets/logo.svg" alt="hololive" id="logo" height="64">
+          </a>              
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: calc(100vh - calc(64px * 2.125));">
+                <li class="nav-item">
+                  <a class="nav-link" target="_blank" href="https://en.hololive.tv/audition/">Audiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="schedule.html">Horarios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#hololy?">Hololy</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTalents" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Talentos
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownTalents">
+                    <li><a class="dropdown-item" href="#">¡Verlos todos!</a></li>
+                    <li><a class="dropdown-item" href="#inonakaMusic">INoNaKa MUSIC</a></li>
+                    <li><a class="dropdown-item" href="#hololive">Hololive</a></li>
+                    <li><a class="dropdown-item" href="#hololiveEn">Hololive-EN</a></li>
+                    <li><a class="dropdown-item" href="#hololiveId">Hololive-ID</a></li>
+                    <li><a class="dropdown-item" href="#holostars">Holostars</a></li>
+                  </ul>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://cover-corp.com/">Sobre Cover</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      ES <img height="24" src="../assets/flags/es.png" alt="en">
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                      <li><a class="dropdown-item" href="#"><img height="15" src="../assets/flags/es.png" alt="es"> Español</a></li>
+                      <li><a class="dropdown-item" href="../talents.html"><img height="15" src="../assets/flags/gb.png" alt="en"> English</a></li>
+                      <li><a class="dropdown-item" href="../jp/talents.html"><img height="15" src="../assets/flags/jp.png" alt="jp"> 日本語</a></li>      
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a title="Cambiar tema" class="nav-link">
+                      <div class="btn-toggle">
+                        <img src="../assets/theme.png" alt="Cambiar tema">
+                        <span> Cambiar tema </span> 
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+          </div>
+      </nav>
+
+      <div class="title">
+        <h1>NUESTROS TALENTOS</h1>
+      </div>
+  </header>
+  </div>
+
+  <section class="talents">
+    <article class="wow animate__animated animate__fadeInUp individualWrapper indexWrapper">
+      <fieldset class="border border-2 d-flex justify-content-around align-items-center flex-wrap">
+        <a href="#hololive"><h2>HOLOLIVE</h2></a>
+        <a href="#hololiveEn"><h2>HOLOLIVE-EN</h2></a>
+        <a href="#hololiveId"><h2>HOLOLIVE-ID</h2></a>
+        <a href="#holostars"><h2>HOLOSTARS</h2></a>
+        <a href="#inonakaMusic"><h2>INONAKA MUSIC</h2></a>
+      </fieldset>
+    </article>
+
+    <span class="anchorfix" id="hololive"></span>
+    <article class="wow animate__animated animate__fadeInUp individualWrapper"> 
+      <fieldset class="border border-2">
+        <legend class="w-auto text-start">HOLOLIVE</legend>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/himemori_luna.png" alt="Himemori Luna"></div>
+              <h3 class="text-center">Himemori Luna</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/hoshimachi_suisei.png" alt="Hoshimachi Suisei"></div>
+              <h3 class="text-center">Hoshimachi Suisei</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/houshou_marine.png" alt="Houshou Marine"></div>
+              <h3 class="text-center">Houshou Marine</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/inugami_korone.png" alt="Inugami Korone"></div>
+              <h3 class="text-center">Inugami Korone</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/kanata_amane.png" alt="Kanata Amane"></div>
+              <h3 class="text-center">Kanata Amane</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/minato_aqua.png" alt="Minato Aqua"></div>
+              <h3 class="text-center">Minato Aqua</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/nakiri_ayame.png" alt="Nakiri Ayame"></div>
+              <h3 class="text-center">Nakiri Ayame</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/natsuiro_matsuri.png" alt="Natsuiro Matsuri"></div>
+              <h3 class="text-center">Natsuiro Matsuri</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/nekomata_okayu.png" alt="Nekomata Okayu"></div>
+              <h3 class="text-center">Nekomata Okayu</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/ookami_mio.png" alt="Ookami Mio"></div>
+              <h3 class="text-center">Ookami Mio</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/oozora_subaru.png" alt="Oozora Subaru"></div>
+              <h3 class="text-center">Oozora Subaru</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/roboco.png" alt="Roboco"></div>
+              <h3 class="text-center">Roboco</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/rosenthal_aki.png" alt="Rosenthal Aki"></div>
+              <h3 class="text-center">Rosenthal Aki</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/sakura_miko.png" alt="Sakura Miko"></div>
+              <h3 class="text-center">Sakura Miko</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/shiranui_flare.png" alt="Shiranui Flare"></div>
+              <h3 class="text-center">Shiranui Flare</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/shishiro_botan.png" alt="Shishiro Botan"></div>
+              <h3 class="text-center">Shishiro Botan</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/takanashi_kiara.png" alt="Takanashi Kiara"></div>
+              <h3 class="text-center">Takanashi Kiara</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/tsunomaki_watame.png" alt="Tsunomaki Watame"></div>
+              <h3 class="text-center">Tsunomaki Watame</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/usada_pekora.png" alt="Usada Pekora"></div>
+              <h3 class="text-center">Usada Pekora</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/yozora_mel.png" alt="Yozora Mel"></div>
+              <h3 class="text-center">Yozora Mel</h3>
+            </a>
+          </div>
+        </div>
+    </fieldset>
+    </article>
+
+    <span class="anchorfix" id="hololiveEn"></span>
+    <article class="wow animate__animated animate__fadeInUp individualWrapper"> 
+      <fieldset class="border border-2">
+        <legend class="w-auto text-start">HOLOLIVE-EN</legend>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/calliope_mori.png" alt="Calliope Mori"></div>
+              <h3 class="text-center">Calliope Mori</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/gawr_gura.png" alt="Gawr Gura"></div>
+              <h3 class="text-center">Gawr Gura</h3>
+            </a>
+          </div>    
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/irys.png" alt="IRyS"></div>
+              <h3 class="text-center">IRyS</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/ninomae_inanis.png" alt="Ninomae Ina'nis"></div>
+              <h3 class="text-center">Ninomae Ina'nis</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/takanashi_kiara.png" alt="Takanashi Kiara"></div>
+              <h3 class="text-center">Takanashi Kiara</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/watson_amelia.png" alt="Watson Amelia"></div>
+              <h3 class="text-center">Watson Amelia</h3>
+            </a>
+          </div>
+        </div>
+    </fieldset>
+    </article>
+
+    <span class="anchorfix" id="hololiveId"></span>
+    <article class="wow animate__animated animate__fadeInUp individualWrapper"> 
+      <fieldset class="border border-2">
+        <legend class="w-auto text-start">HOLOLIVE-ID</legend>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/ayunda_risu.png" alt="Ayunda Risu"></div>
+              <h3 class="text-center">Ayunda Risu</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/anya_melfissa.png" alt="Anya Melfissa"></div>
+              <h3 class="text-center">Anya Melfissa</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/airani_iofifteen.png" alt="Airani Iofifteen"></div>
+              <h3 class="text-center">Airani Iofifteen</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/hoshinova_moona.png" alt="Hoshinova Moona"></div>
+              <h3 class="text-center">Hoshinova Moona</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/kureiji_ollie.png" alt="Kureiji Ollie"></div>
+              <h3 class="text-center">Kureiji Ollie</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/pavolia_reine.png" alt="Pavolia Reine"></div>
+              <h3 class="text-center">Pavolia Reine</h3>
+            </a>
+          </div>
+        </div>
+      </fieldset>
+    </article>
+
+    <span class="anchorfix" id="holostars"></span>
+    <article class="wow animate__animated animate__fadeInUp individualWrapper">
+      <fieldset class="border border-2">
+        <legend class="w-auto text-start">HOLOSTARS</legend>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/aragami_oga.png" alt="Aragami Ora"></div>
+              <h3 class="text-center">Aragami Ora</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/arurandeisu.png" alt="Arurandeisu"></div>
+              <h3 class="text-center">Arurandeisu</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/hanasaki_miyabi.png" alt="Hanasaki Miyabi"></div>
+              <h3 class="text-center">Hanasaki Miyabi</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/kageyama_shien.png" alt="Kageyama Shien"></div>
+              <h3 class="text-center">Kageyama Shien</h3>
+            </a>
+          </div>    
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/kanade_izuru.png" alt="Kanade Izuru"></div>
+              <h3 class="text-center">Kanade Izuru</h3>
+            </a>
+          </div>
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/rikkaroid.png" alt="Rikkaroid"></div>
+              <h3 class="text-center">Rikkaroid</h3>
+            </a>
+          </div>
+        </div>
+      </fieldset>
+    </article>
+
+    <span class="anchorfix" id="inonakaMusic"></span>
+    <article class="wow animate__animated animate__fadeInUp individualWrapper lastIndividualWrapper">  
+      <fieldset class="border border-2">
+        <legend class="w-auto text-start">INONAKA MUSIC</legend>
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-4 col-xl-3 overflow-hidden p-0 border-0 card">
+            <a class="text-decoration-none" href="product.html">
+              <div class="overflow-hidden"><img  class="card-img-top" src="../assets/talents/azki.png" alt="AZKi"></div>
+              <h3 class="text-center">AZKi</h3>
+            </a>
+          </div>
+        </div>
+      </fieldset>
+    </article>
+  </section>
+
+  <footer>
+    <div class="footerContent">
+        <h3 class="wow animate__animated animate__fadeInUp">Ⓒ 2016 COVER Corp.</h3>   
+        <div class="wow animate__animated animate__fadeInUp footer--socialWrapper">
+        <a title="Bilibili" target="_blank" href="https://space.bilibili.com/286700005"><img src="../assets/social/bilibili.png" alt="Bilibili"></a>
+        <a title="Facebook" target="_blank" href="https://www.facebook.com/hololivetv/"><img src="../assets/social/facebook.png" alt="Facebook"></a>
+        <a title="Reddit" target="_blank" href="https://www.reddit.com/r/Hololive/"><img src="../assets/social/reddit.png" alt="Reddit"></a>
+        <a title="Twitter" target="_blank" href="https://twitter.com/hololivetv/"><img src="../assets/social/twitter.png" alt="Twitter"></a>
+        <a title="YouTube" target="_blank" href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg/"><img src="../assets/social/youtube.png" alt="YouTube"></a>
+        </div>      
+    </div>    
+  </footer>
+
+  <script src="../js/bootstrap/bootstrap.min.js"></script>
+  <script src="../js/popper/popper.min.js"></script>
+  <script src="../js/wow/wow.min.js"></script> 
+  <script src="../js/script.js"></script>  
+</body>
+</html>

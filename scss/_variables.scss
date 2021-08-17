@@ -7,8 +7,8 @@ $body_background-color: #74cfe2 !default;
 
 // nav
 $nav_hover-color: #49c8f0 !default;
-$nav_bottomBorder-color: rgb(183, 183, 183) !default;
-$nav_bottomBorder-shadow: 0 4px 8px 0px rgba(127,127,127,0.375);
+$nav_bottomBorder-color: rgb(170, 170, 170) !default;
+$nav_bottomBorder-shadow: 0 0.5625vmax 1.6875vmax rgba(0,0,0,0.375) !default; 
 $navMobile_background-color: white !default;
 $navMobile_border-color: rgba(0, 0, 0, 0.5) !default;
 $navMobile_link-color: #2f3c4d !default;
@@ -17,7 +17,7 @@ $navMobile_dropdown_bgColor: white !default;
 $nav_background-color: white !default;
 $nav_link-color: white !default;
 $nav_link-shadow: 0 1px 1px rgba(0,0,0,.2) !default;
-$nav-themeImage-invert: invert(0.975);
+$nav-themeImage-invert: invert(0.975) !default;
 $nav-dropdown-color: black !default;
 $navScroll-text-color: #2f3c4d !default;
 $navScroll-themeImage-invert: invert(0.225) !default;
@@ -54,6 +54,74 @@ $indexCorp_text-color: #74cfe2 !default;
 $indexCorp_imageHover-opacity: 0.2125 !default;
 $indexCorpPC_image-opacity: 0.975 !default;
 
+// FAQ
+$faq_background-opacity: 0.075 !default;
+
+// FAQ -- TITLE
+$faqTitle_text-color: white !default;
+$faqTitle_text-shadow: 1px 1px 4px white !default;
+
+// FAQ -- QUESTION
+$faqQuestion_bg-color: white !default;
+$faqQuestion_legend-color: #74d0e2 !default;
+$faqQuestion_p-color: #2f3c4dbc !default;
+$faqQuestion_pAnchor-color: #74cfe2 !default;
+$faqQuestion_pAnchorHover-color: #3b6770 !default;
+$faqQuestion_ulBullet-color: #74cfe2 !default;
+$faqQuestion_span-color: #74cfe2 !default; 
+
+// TALENTS
+$talents_bg-opacity: 0.075 !default;
+
+// TALENTS -- TITLE
+$talentsTitle_text-color: white !default;
+$talentsTitle_text-shadow: 1px 1px 4px white !default;
+
+// TALENTS -- INDEX
+$talentsIndex_text-color: #2f3c4dbc !default;
+$talentsIndex_textHover-color: #74d0e2 !default;
+
+// TALENTS -- CARDS
+$talentsCard_legend-color: #74d0e2 !default;
+$talentsCard_img-opacity: 0.925 !default;
+$talentsCard_bg-color: white !default;
+$talentsCard_p-color: #2f3c4dca !default;
+
+// PRODUCT
+$product_bg-color: white !default;
+$product_bgImg-opacity: 0.925 !default;
+    
+// PRODUCT -- MAIN
+$productMain_title-color: #74cfe2 !default;
+$productMain_subtitle-color: rgba(0,0,0,0.5) !default; 
+$productMain_text-color: #2f3c4d !default; 
+$productMain_btn-color: #74cfe2 !default;
+$productMain_btnHover-color: #baf8ff !default;
+$productMain_imgShadow-color: black !default;
+
+// PRODUCT -- MORE DETAILS
+$productDetails_title-color: white !default;
+$productDetails_text-color: white !default;
+
+// SCHEDULE
+$schedule_bgImg-opacity: 0.075 !default;
+
+// SCHEDULE -- TITLE
+$scheduleTitle_text-color: white !default;
+$scheduleTitle_text-shadow: 1px 1px 4px white !default;
+    
+// SCHEDULE -- DATE
+$scheduleDate_bg-color: white !default;
+$scheduleDate_text-color: #74d0e2 !default;
+
+// SCHEDULE -- CARD
+$scheduleCard_title-color: #2f3c4d !default;
+$scheduleCard_hour-color: black !default;
+$scheduleCard_charBorder-color: rgb(170,170,170) !default;
+$scheduleCard_border-color: rgb(170,170,170) !default;
+$scheduleCard_bg-color: white !default;
+$scheduleCard_headerFooterBg-color: rgb(245, 245, 245) !default;
+
 // footer
 $footer_background-color: white !default;
 $footer_text-color: rgb(20, 20, 20) !default;
@@ -61,13 +129,14 @@ $footer_text-color: rgb(20, 20, 20) !default;
 /* ------------------------------------------------------------ 
 -------------------- DARKMODE -------------------- 
 ------------------------------------------------------------ */
+
 // body
 $d--body_background-color: #02152e !default;
 
 // nav
 $d--nav_hover-color: #a8ccfc;
 $d--nav_bottomBorder-color: rgba(10, 10, 10, .375) !default;
-$d--nav_bottomBorder-shadow: 0 4px 8px 0px rgba(10, 10, 10, .375) !default;
+$d--nav_bottomBorder-shadow: 0 0.5vmax 1.5vmax rgba(255,255,255, .1125) !default;
 $d--navMobile_background-color: rgb(20, 20, 20) !default;
 $d--navMobile_border-color: rgba(255, 255, 255, .625) !default;
 $d--navMobile_link-color: rgb(215, 215, 215)!default;
@@ -112,6 +181,74 @@ $d--indexCorp_bg-color: rgb(60, 60, 60) !default;
 $d--indexCorp_text-color: #a8ccfc !default;
 $d--indexCorp_imageHover-opacity: 0.2125 !default;
 $d--indexCorpPC_image-opacity: 0.9125 !default;
+
+// FAQ
+$d--faq_background-opacity: 0.06275 !default;
+
+// FAQ -- TITLE
+$d--faqTitle_text-color: rgb(216, 216, 216) !default;
+$d--faqTitle_text-shadow: 1px 1px 4px #a8ccfc !default;
+
+// FAQ -- QUESTION
+$d--faqQuestion_bg-color: rgb(20, 20, 20) !default;
+$d--faqQuestion_legend-color: #a8ccfc !default;
+$d--faqQuestion_p-color: #becad2 !default;
+$d--faqQuestion_pAnchor-color: #a8ccfc !default;
+$d--faqQuestion_pAnchorHover-color: #4b5b70 !default;
+$d--faqQuestion_ulBullet-color: #a8ccfc !default;
+$d--faqQuestion_span-color: #a8ccfc !default; 
+
+// TALENTS
+$d--talents_bg-opacity: 0.06275;
+
+// TALENTS -- TITLE
+$d--talentsTitle_text-color: rgb(216, 216, 216) !default;
+$d--talentsTitle_text-shadow: 1px 1px 4px #a8ccfc !default;
+
+// TALENTS -- INDEX
+$d--talentsIndex_text-color: #becad2 !default;
+$d--talentsIndex_textHover-color: #a8ccfc !default;
+
+// TALENTS -- CARDS
+$d--talentsCard_legend-color: #a8ccfc !default;
+$d--talentsCard_img-opacity: 0.8925 !default;
+$d--talentsCard_bg-color: rgb(20, 20, 20) !default;
+$d--talentsCard_p-color: #becad2 !default;
+
+// PRODUCT
+$d--product_bg-color: rgb(20, 20, 20) !default;
+$d--product_bgImg-opacity: 0.865 !default;
+    
+// PRODUCT -- MAIN
+$d--productMain_title-color: #a8ccfc !default;
+$d--productMain_subtitle-color: #becad2ab !default; 
+$d--productMain_text-color: #becad2 !default; 
+$d--productMain_btn-color: #a8ccfc !default;
+$d--productMain_btnHover-color: #07489f !default;
+$d--productMain_imgShadow-color: rgba(255, 255, 255, 0.25) !default;
+
+// PRODUCT -- MORE DETAILS
+$d--productDetails_title-color: #cdcdcd !default;
+$d--productDetails_text-color: #becad2 !default;
+
+// SCHEDULE
+$d--schedule_bgImg-opacity: 0.06275 !default;
+
+// SCHEDULE -- TITLE
+$d--scheduleTitle_text-color: rgb(216, 216, 216) !default;
+$d--scheduleTitle_text-shadow: 1px 1px 4px #a8ccfc !default;
+    
+// SCHEDULE -- DATE
+$d--scheduleDate_bg-color: rgb(20, 20, 20) !default;
+$d--scheduleDate_text-color: #a8ccfc !default;
+
+// SCHEDULE -- CARD
+$d--scheduleCard_title-color: #becad2 !default;
+$d--scheduleCard_hour-color: #becad2 !default;
+$d--scheduleCard_charBorder-color: #a8ccfc !default;
+$d--scheduleCard_border-color: black !default;
+$d--scheduleCard_bg-color: black !default;
+$d--scheduleCard_headerFooterBg-color: #111111 !default;
 
 // footer
 $d--footer_background-color: rgb(20, 20, 20) !default;

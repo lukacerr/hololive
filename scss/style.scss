@@ -58,6 +58,74 @@
     --indexCorp_imageHover-opacity: #{$indexCorp_imageHover-opacity};
     --indexCorpPC_image-opacity: #{$indexCorpPC_image-opacity};
 
+    // FAQ
+    --faq_background-opacity: #{$faq_background-opacity};
+
+    // FAQ -- TITLE
+    --faqTitle_text-color: #{$faqTitle_text-color};
+    --faqTitle_text-shadow: #{$faqTitle_text-shadow};
+
+    // FAQ -- QUESTION
+    --faqQuestion_bg-color: #{$faqQuestion_bg-color};
+    --faqQuestion_legend-color: #{$faqQuestion_legend-color};
+    --faqQuestion_p-color: #{$faqQuestion_p-color};
+    --faqQuestion_pAnchor-color: #{$faqQuestion_pAnchor-color};
+    --faqQuestion_pAnchorHover-color: #{$faqQuestion_pAnchorHover-color};
+    --faqQuestion_ulBullet-color: #{$faqQuestion_ulBullet-color};
+    --faqQuestion_span-color: #{$faqQuestion_span-color}; 
+
+    // TALENTS
+    --talents_bg-opacity: #{$talents_bg-opacity};
+
+    // TALENTS -- TITLE
+    --talentsTitle_text-color: #{$talentsTitle_text-color};
+    --talentsTitle_text-shadow: #{$talentsTitle_text-shadow};
+    
+    // TALENTS -- INDEX
+    --talentsIndex_text-color: #{$talentsIndex_text-color};
+    --talentsIndex_textHover-color: #{$talentsIndex_textHover-color};
+
+    // TALENTS -- CARDS
+    --talentsCard_legend-color: #{$talentsCard_legend-color};
+    --talentsCard_img-opacity: #{$talentsCard_img-opacity};
+    --talentsCard_bg-color: #{$talentsCard_bg-color};
+    --talentsCard_p-color: #{$talentsCard_p-color};
+
+    // PRODUCT
+    --product_bg-color: #{$product_bg-color};
+    --product_bgImg-opacity: #{$product_bgImg-opacity};
+    
+    // PRODUCT -- MAIN
+    --productMain_title-color: #{$productMain_title-color};
+    --productMain_subtitle-color: #{$productMain_subtitle-color}; 
+    --productMain_text-color: #{$productMain_text-color}; 
+    --productMain_btn-color: #{$productMain_btn-color};
+    --productMain_btnHover-color: #{$productMain_btnHover-color};
+    --productMain_imgShadow-color: #{$productMain_imgShadow-color};
+
+    // PRODUCT -- MORE DETAILS
+    --productDetails_title-color: #{$productDetails_title-color};
+    --productDetails_text-color: #{$productDetails_text-color};
+
+    // SCHEDULE
+    --schedule_bgImg-opacity: #{$schedule_bgImg-opacity};
+
+    // SCHEDULE -- TITLE
+    --scheduleTitle_text-color: #{$scheduleTitle_text-color};
+    --scheduleTitle_text-shadow: #{$scheduleTitle_text-shadow};
+    
+    // SCHEDULE -- DATE
+    --scheduleDate_bg-color: #{$scheduleDate_bg-color};
+    --scheduleDate_text-color: #{$scheduleDate_text-color};
+
+    // SCHEDULE -- CARD
+    --scheduleCard_title-color: #{$scheduleCard_title-color};
+    --scheduleCard_hour-color: #{$scheduleCard_hour-color};
+    --scheduleCard_charBorder-color: #{$scheduleCard_charBorder-color};
+    --scheduleCard_border-color: #{$scheduleCard_border-color};
+    --scheduleCard_bg-color: #{$scheduleCard_bg-color};
+    --scheduleCard_headerFooterBg-color: #{$scheduleCard_headerFooterBg-color};
+
     // footer
     --footer_background-color: #{$footer_background-color};
     --footer_text-color: #{$footer_text-color};
@@ -116,6 +184,74 @@
     --indexCorp_text-color: #{$d--indexCorp_text-color};
     --indexCorp_imageHover-opacity: #{$d--indexCorp_imageHover-opacity};
     --indexCorpPC_image-opacity: #{$d--indexCorpPC_image-opacity};
+
+    // FAQ
+    --faq_background-opacity: #{$d--faq_background-opacity};
+
+    // FAQ -- TITLE
+    --faqTitle_text-color: #{$d--faqTitle_text-color};
+    --faqTitle_text-shadow: #{$d--faqTitle_text-shadow};
+
+    // FAQ -- QUESTION
+    --faqQuestion_bg-color: #{$d--faqQuestion_bg-color};
+    --faqQuestion_legend-color: #{$d--faqQuestion_legend-color};
+    --faqQuestion_p-color: #{$d--faqQuestion_p-color};
+    --faqQuestion_pAnchor-color: #{$d--faqQuestion_pAnchor-color};
+    --faqQuestion_pAnchorHover-color: #{$d--faqQuestion_pAnchorHover-color};
+    --faqQuestion_ulBullet-color: #{$d--faqQuestion_ulBullet-color};
+    --faqQuestion_span-color: #{$d--faqQuestion_span-color}; 
+
+    // TALENTS
+    --talents_bg-opacity: #{$d--talents_bg-opacity};
+
+    // TALENTS -- TITLE
+    --talentsTitle_text-color: #{$d--talentsTitle_text-color};
+    --talentsTitle_text-shadow: #{$d--talentsTitle_text-shadow};
+
+    // TALENTS -- INDEX
+    --talentsIndex_text-color: #{$d--talentsIndex_text-color};
+    --talentsIndex_textHover-color: #{$d--talentsIndex_textHover-color};
+
+    // TALENTS -- CARDS
+    --talentsCard_legend-color: #{$d--talentsCard_legend-color};
+    --talentsCard_img-opacity: #{$d--talentsCard_img-opacity};
+    --talentsCard_bg-color: #{$d--talentsCard_bg-color};
+    --talentsCard_p-color: #{$d--talentsCard_p-color};
+
+    // PRODUCT
+    --product_bg-color: #{$d--product_bg-color};
+    --product_bgImg-opacity: #{$d--product_bgImg-opacity};
+    
+    // PRODUCT -- MAIN
+    --productMain_title-color: #{$d--productMain_title-color};
+    --productMain_subtitle-color: #{$d--productMain_subtitle-color}; 
+    --productMain_text-color: #{$d--productMain_text-color}; 
+    --productMain_btn-color: #{$d--productMain_btn-color};
+    --productMain_btnHover-color: #{$d--productMain_btnHover-color};
+    --productMain_imgShadow-color: #{$d--productMain_imgShadow-color};
+        
+    // PRODUCT -- MORE DETAILS
+    --productDetails_title-color: #{$d--productDetails_title-color};
+    --productDetails_text-color: #{$d--productDetails_text-color};
+
+    // SCHEDULE
+    --schedule_bgImg-opacity: #{$d--schedule_bgImg-opacity};
+
+    // SCHEDULE -- TITLE
+    --scheduleTitle_text-color: #{$d--scheduleTitle_text-color};
+    --scheduleTitle_text-shadow: #{$d--scheduleTitle_text-shadow};
+    
+    // SCHEDULE -- DATE
+    --scheduleDate_bg-color: #{$d--scheduleDate_bg-color};
+    --scheduleDate_text-color: #{$d--scheduleDate_text-color};
+
+    // SCHEDULE -- CARD
+    --scheduleCard_title-color: #{$d--scheduleCard_title-color};
+    --scheduleCard_hour-color: #{$d--scheduleCard_hour-color};
+    --scheduleCard_charBorder-color: #{$d--scheduleCard_charBorder-color};
+    --scheduleCard_border-color: #{$d--scheduleCard_border-color};
+    --scheduleCard_bg-color: #{$d--scheduleCard_bg-color};
+    --scheduleCard_headerFooterBg-color: #{$d--scheduleCard_headerFooterBg-color};
 
     // footer
     --footer_background-color: #{$d--footer_background-color};
@@ -384,6 +520,20 @@ $navbar-nav-link-padding-x: 0.75rem;
 .anchorfix{
     position: relative;
     top: -10vh;
+}
+
+// Tablets y celulares horizontalmente
+@media screen and (min-width: 576px){
+    .anchorfix_simple{
+        top: -7.85vh;
+    }
+}
+
+// PCs y notebooks
+@media screen and (min-width: 992px){
+    .anchorfix_simple{
+        top: -4.375vh;
+    }
 }
 
 /* -------------------- FOOTER -------------------- */

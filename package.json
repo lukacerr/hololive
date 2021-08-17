@@ -4,12 +4,24 @@
   "description": "Hololive website - Luka Cerrutti, Coderhouse 2021",
   "main": "index.js",
   "scripts": {
-    "bootstrap-scss": "node-sass --include-path scss scss/bootstrap/bootstrap.scss css/bootstrap/bootstrap.css",
-    "style-scss": "node-sass --include-path scss scss/style.scss css/style.css",
-    "index-scss": "node-sass --include-path scss scss/index.scss css/index.css",
-	  
-    "build-css": "npm run bootstrap-scss && npm run style-scss && npm run index-scss",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "bootstrap-scss": "node-sass --include-path scss scss/bootstrap/bootstrap.scss css/bootstrap/bootstrap.css --output-style compressed",
+    "style-scss": "node-sass --include-path scss scss/style.scss css/style.css --output-style compressed",
+    "base-scss": "npm run bootstrap-scss && npm run style-scss",
+    
+    "index-scss": "node-sass --include-path scss scss/index.scss css/index.css --output-style compressed",
+	  "faq-scss": "node-sass --include-path scss scss/faq.scss css/faq.css --output-style compressed",
+    "talents-scss": "node-sass --include-path scss scss/talents.scss css/talents.css --output-style compressed",
+    "product-scss": "node-sass --include-path scss scss/product.scss css/product.css --output-style compressed", 
+    "schedule-scss": "node-sass --include-path scss scss/schedule.scss css/schedule.css --output-style compressed", 
+
+    "compile-index": "nodemon -e scss -x \"npm run base-scss && npm run index-scss\"",
+    "compile-faq": "nodemon -e scss -x \"npm run base-scss && npm run faq-scss\"",
+    "compile-talents": "nodemon -e scss -x \"npm run base-scss && npm run talents-scss\"",
+    "compile-product": "nodemon -e scss -x \"npm run base-scss && npm run product-scss\"",
+    "compile-schedule": "nodemon -e scss -x \"npm run base-scss && npm run schedule-scss\"",
+    
+    "all-scss": "npm run bootstrap-scss && npm run style-scss && npm run index-scss && npm run faq-scss && npm run talents-scss && npm run product-scss && npm run schedule-scss",
+    "compile-all": "nodemon -e scss -x \"npm run all-scss\""
   },
   "author": "Luka Cerrutti",
   "license": "ISC",

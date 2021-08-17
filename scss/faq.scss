@@ -1,0 +1,167 @@
+/* -------------------- GENERAL -------------------- */
+
+body{
+    position: relative;
+}
+
+.body--background{
+    width: 100%; height: 100%;
+    content: ""; z-index: -1; position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url("../assets/main_bg.png") center;
+    background-size: 100vw;
+    opacity: var(--faq_background-opacity);
+}
+
+// Tablets y celulares horizontalmente
+@media screen and (min-width: 576px){
+    .body--background{
+        background-size: 75vw;
+    }   
+}
+
+// PCs y notebooks
+@media screen and (min-width: 992px){
+    .body--background{
+        background-size: 50vw;
+    }   
+}
+
+/* -------------------- TITLE (HEADER) -------------------- */
+
+// Mobile (default)
+.title{
+    padding-top: calc(calc(48px + 2vh) * 2);
+    padding-left: 2vw; padding-right: 2vw;
+    text-align: center;
+    h1{
+        color: var(--faqTitle_text-color);
+        text-shadow: var(--faqTitle_text-shadow);
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 900;
+        
+        font-size: 2.5em;
+        letter-spacing: 0.1rem;
+    }
+}
+
+// Tablets y celulares horizontalmente
+@media screen and (min-width: 576px){
+    .title{
+        padding-left: 5vw; padding-right: 5vw;
+        h1{
+            font-size: 3.125em;
+        }
+    }
+}
+
+// PCs y notebooks
+@media screen and (min-width: 992px){
+    .title{
+        padding-top: calc(calc(64px + 2vh) * 1.875);
+        padding-left: 10vw; padding-right: 10vw;
+        h1{
+            font-size: 4em;
+        }
+    }
+}
+
+/* -------------------- FAQ -------------------- */
+
+.faq{
+    padding-left: 8.75vw; padding-right: 8.75vw;
+    .lastIndividualWrapper{padding-bottom: 2.625vh;}
+    .individualWrapper{
+        padding-top: 2.25vh; padding-bottom: 0.25vh;     
+        fieldset{
+            background: var(--faqQuestion_bg-color);
+            border-color: var(--faqQuestion_bg-color) !important;
+            border-radius: 12px;
+            box-shadow: 0 0 3px var(--faqQuestion_bg-color);
+            padding: 0.5125vmax 2vmax 1.25vmax 2vmax;
+            legend{
+                margin: 0;
+                color: var(--faqQuestion_legend-color);
+
+                font-family: 'Work Sans', sans-serif;
+                font-weight: 600;
+                font-size: 1.625em;
+            }
+            .answer{
+                p{
+                    margin: 0;
+                    font-family: 'Work Sans', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.025em;
+                    color: var(--faqQuestion_p-color);
+
+                    a{
+                        text-decoration: none;
+                        color: var(--faqQuestion_pAnchor-color);
+                    }
+
+                    a:hover{
+                        color: var(--faqQuestion_pAnchorHover-color);
+                    }
+
+                    span{
+                        color: var(--faqQuestion_span-color);
+                    }
+                }
+
+                ul{
+                    margin-bottom: 0;
+                    color: var(--faqQuestion_ulBullet-color);
+                    li{
+                        padding-top: 0.375vh;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Tablets y celulares horizontalmente
+@media screen and (min-width: 576px){
+    .faq{
+        .individualWrapper{  
+            fieldset{
+                legend{              
+                    font-size: 2.125em;
+                }
+                .answer{
+                    p{
+                        font-size: 1.175em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// PCs y notebooks
+@media screen and (min-width: 992px){
+    .faq{
+        .lastIndividualWrapper{padding-bottom: 3.3991875vh;}
+        .individualWrapper{
+            padding-top: 3.0215vh; padding-bottom: 0;
+            fieldset{
+                padding: 0.4551375vmax 2.625vmax 0.6875vmax 1.3125vmax;
+                legend{
+                    font-size: 2.0925em;
+                }
+                .answer{
+                    p{
+                        font-size: 1.075em;
+                    }
+    
+                    ul{
+                        li{
+                            padding-top: 0.375vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

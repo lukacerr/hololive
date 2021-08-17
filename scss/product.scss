@@ -1,0 +1,298 @@
+/* -------------------- MAIN -------------------- */
+
+// Mobile (default)
+.main--bg:before{
+    opacity: var(--product_bgImg-opacity);
+    z-index: -1;
+    position: absolute; content: ""; top: 0; left: 0; bottom: 0; right: 0;
+    background: url("../assets/talents/ninomae_inanis_product_bg.png") no-repeat right bottom;
+    background-size: 0;
+}
+
+.main{
+    z-index: 1;
+    position: relative;
+    background: var(--product_bg-color);
+    padding: calc(calc(48px + 2vh) * 2) 5.25vw 2vh 5.25vw;
+    text-align: center;
+
+    h1{
+        color: var(--productMain_title-color);
+        font-family: "Noto Sans JP", sans-serif;
+        font-weight: 900;
+        font-size: 2em;
+    }
+
+    h2{
+        color: var(--productMain_subtitle-color);
+        font-family: "Lato", sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        font-size: 1.1em;    
+        letter-spacing: 0.1rem;  
+    }
+
+    .imgWrapper{
+        margin-top: 1.5vh;
+        img{
+            filter: drop-shadow(0.1rem 0.1rem 0.3rem var(--productMain_imgShadow-color));
+            width: calc(min(100%, 800px));
+            height: calc(min(100%, 800px));
+            object-fit: cover;
+        }
+    }
+
+    .textWrapper{  
+        margin-top: 1.5vh;
+
+        h1,h2{
+            display: none;
+        }
+
+        p{
+            color: var(--productMain_text-color);
+            font-family: "Work Sans", sans-serif;
+            font-size: 0.98625em;
+            margin-bottom: 1vh;
+        }
+
+        button{
+            color: var(--product_bg-color);
+            background: var(--productMain_btn-color);
+            font-family: "Work Sans", sans-serif;
+            font-size: 1.2em;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-top: 0.625rem;
+            width: 100%;
+            padding: 0.8625vmax;
+            border: 0;
+            border-radius: 100px;  
+        }
+
+        .lastButton--margin{
+            margin-bottom: 0.625rem;
+        }
+
+        button:hover{
+            transition: all 0.1s;
+            background: var(--productMain_btnHover-color);
+        }
+    }
+}
+
+// Tablets y celulares horizontalmente
+@media screen and (min-width: 576px){
+    .main--bg:before{
+        background-size: 6.25vw;
+    }
+    
+    .main{
+        padding: calc(calc(48px + 2vh) * 2) 6.375vw 4vh 6.375vw;
+    
+        h1{
+            font-size: 2.925em;
+        }
+
+        h2{
+            display: none;
+            font-size: 1.2em;    
+            letter-spacing: 0.15rem;  
+        }
+
+        .mainWrapper{
+            display: flex;
+        }
+
+        .imgWrapper{
+            margin-top: 1vh;
+            flex: 1;
+            text-align: center;
+        }
+
+        .textWrapper{
+            margin-top: 1vh;
+            padding-left: 3.1875vw;
+            flex: 1;
+
+            h2{
+                display: block;
+            }
+
+            p{
+                text-align: left;
+                font-size: 1em;
+                margin-bottom: 1rem;
+            }
+
+            button{
+                font-size: 1.175em;
+                padding: 0.646875vmax;
+            }
+        }
+    }
+}
+
+// PCs y notebooks
+@media screen and (min-width: 992px){
+    .main--bg:before{
+        background-size: 12.5vw;
+    }
+
+    .main{
+        padding: calc(calc(64px + 2vh) * 1.625) 17.5vw 2.75% 17.5vw;
+        text-align: left;
+
+        h1{
+            display: none;
+            font-size: 2.99em;
+        }
+
+        h2{
+            display: none;
+            font-size: 1.45925em;    
+            letter-spacing: 0.1rem;  
+        }
+
+        .textWrapper{
+            margin-top: 1vh;
+            padding-left: 3.1875vw;
+            h1,h2{
+                display: block;
+            }
+
+            p{
+                font-size: 1.2em;
+            }
+
+            button{
+                font-size: 1.375em;
+                margin-top: 1.2895rem;
+                padding: 0.5vmax;
+            }
+
+            .lastButton--margin{
+                margin-bottom: 1.2895rem;
+            }
+        }
+
+        .imgWrapper{
+            margin-top: 1vh;
+        }
+    }
+}
+
+/* -------------------- MORE DETAILS -------------------- */
+
+// Mobile (default)
+.moreDetails{
+    position: relative;
+    color: var(--productDetails_text-color);
+    padding: 4vh 5.25vw;
+    text-align: center;  
+
+    h2{
+        color: var(--productDetails_title-color);
+        font-family: 'Noto Sans JP', 'sans-serif';
+        font-weight: 900;
+        font-size: 1.9em;
+
+        margin-bottom: 1rem;
+    }
+
+    .moreDetailsTextWrapper{
+        text-align: left;
+        font-family: 'Work Sans', 'sans-serif';
+
+        .lastHeader--margin{
+            margin-bottom: 1rem;
+        }
+
+        h5{
+            font-style: italic;
+            font-size: 1em;
+        }
+
+        p{
+            font-size: 0.98625em;
+        }
+    }
+
+    .moreDetailsMediaWrapper{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        padding-left: 5.25vw; padding-right: 5.25vw;
+        img{
+            width: calc(min(100%, 400px));
+            padding: 0 0 1vmax;
+        }
+    }
+}
+
+.details--background{
+    width: 100%; height: 100%;
+    content: ""; z-index: -1; position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: url("../assets/main_bg.png") center;
+    background-size: 100vw;
+    opacity: 0.0375;
+}
+
+// Tablets y celulares horizontalmente
+@media screen and (min-width: 576px){
+    .moreDetails{
+        padding: 4vh 6.375vw;
+
+        h2{
+            font-size: 2.925em;
+        }
+
+        .moreDetailsTextWrapper{
+            h5{
+                font-size: 1.5em;
+            }
+    
+            p{
+                font-size: 1em;
+            }
+        }
+
+        .moreDetailsMediaWrapper{
+            padding-left: 3.1875vw; padding-right: 3.1875vw;
+            flex-direction: row;
+            img{
+                padding: 0 1vmax;
+            }
+        }
+    }
+
+    .details--background{
+        background-size: 75vw;
+    }   
+}
+
+// PCs y notebooks
+@media screen and (min-width: 992px){
+    .moreDetails{
+        padding: 4vh 17.5vw;
+
+        h2{
+            font-size: 2.99em;
+        }
+
+        .moreDetailsTextWrapper{    
+            p{
+                font-size: 1.2em;
+            }
+        }
+
+        .moreDetailsMediaWrapper{
+            padding-left: 2.1875vw; padding-right: 2.1875vw;
+        }
+    }
+
+    .details--background{
+        background-size: 50vw;
+    }   
+}

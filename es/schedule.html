@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../css/animate/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/schedule.css">
+
+    <meta name="author" content="Luka Cerrutti">
+    <link rel="icon" type="image/jpg" href="../assets/icon.png"/>
+    <meta name="keywords" content="Hololive, Holostars, INoNaKa MUSIC, Hololy, Vtuber, VTalents, Idol, Idols, Virtual, Virtual idol, Virtual talent, Japan, Japanese, YouTube, Bilibili, Holoagenda, agenda, schedule, vtuber schedule, vtuber agenda">  
+    <meta name="description" content="Aquí está, la Holoagenda. Un sitio de programación donde se puede ver la distribución de VTuber perteneciente a Hololive Production.">
+    <title>Holoagenda - Hololive Producciones</title>
+</head>
+<body class="animate__animated animate__fadeIn">
+  <div class="body--background"></div>
+    <div class="wow animate__animated animate__fadeInDown">
+        <header>
+          <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+              <a class="navbar-brand" href="index.html">
+                  <img src="../assets/logo.svg" alt="hololive" id="logo" height="64">
+              </a>              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+      
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: calc(100vh - calc(64px * 2.125));">
+                    <li class="nav-item">
+                      <a class="nav-link" target="_blank" href="https://en.hololive.tv/audition/">Audiciones</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Horarios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html#hololy?">Hololy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownTalents" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Talentos
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdownTalents">
+                        <li><a class="dropdown-item" href="talents.html">¡Verlos todos!</a></li>
+                        <li><a class="dropdown-item" href="talents.html#inonakaMusic?">INoNaKa MUSIC</a></li>
+                        <li><a class="dropdown-item" href="talents.html#hololive?">Hololive</a></li>
+                        <li><a class="dropdown-item" href="talents.html#hololiveEn?">Hololive-EN</a></li>
+                        <li><a class="dropdown-item" href="talents.html#hololiveId?">Hololive-ID</a></li>
+                        <li><a class="dropdown-item" href="talents.html#holostars?">Holostars</a></li>
+                      </ul>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://cover-corp.com/">Sobre Cover</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="faq.html">FAQ</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          ES <img height="24" src="../assets/flags/es.png" alt="es">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                          <li><a class="dropdown-item" href="#"><img height="15" src="../assets/flags/es.png" alt="es"> Español</a></li>
+                          <li><a class="dropdown-item" href="../schedule.html"><img height="15" src="../assets/flags/gb.png" alt="en"> English</a></li>
+                          <li><a class="dropdown-item" href="../jp/schedule.html"><img height="15" src="../assets/flags/jp.png" alt="jp"> 日本語</a></li>      
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a title="Cambiar tema" class="nav-link">
+                          <div class="btn-toggle">
+                            <img src="../assets/theme.png" alt="Cambiar tema">
+                            <span> Cambiar tema </span> 
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+              </div>
+          </nav>
+
+          <div class="title">
+              <h1>HOLOAGENDA</h1>
+          </div>
+      </header>
+      </div>
+
+      <section class="schedule">
+          <article class="day">
+              <div class="wow animate__animated animate__fadeInUp dateWrapper"><h2>08/14/2021</h2></div>
+              <div class="contentWrapper">
+                <div class="row justify-content-center">
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="SUPERインドネシア語クラスルーム withねねち #reinenechi【hololiveID 2nd gen】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=-xPB9ivpKoQ/">
+                        <div class="card-header">
+                          <h3>1:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/4.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">SUPERインドネシア語クラスルーム withねねち #reinenechi【hololiveID 2nd gen】</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/pavolia_reine.png" width="100%" alt="Pavolia Reine" title="Pavolia Reine"></div>
+                            <!-- No encontré una buena foto transparente de Nene~ -->
+                            <div class="individualCharWrapper"><img src="../assets/talents/oozora_subaru.png" width="100%" alt="Oozora Subaru" title="Oozora Subaru"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="【Karaoke!!】Casually singing!" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=nndLjEBzFFA/">
+                        <div class="card-header">
+                          <h3>1:30 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/1.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">【Karaoke!!】Casually singing!</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/irys.png" width="100%" alt="IRyS" title="IRyS"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="ルルーシァ・ヴィ・ブイチューバー" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=sxJCyJpPvdA/">
+                        <div class="card-header">
+                          <h3>4:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/2.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">ルルーシァ・ヴィ・ブイチューバー</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <!-- No encontré una buena foto transparente de Rushia~ -->
+                            <div class="individualCharWrapper"><img src="../assets/talents/usada_pekora.png" width="100%" alt="Uruha Rushia" title="Uruha Rushia"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="【 #わたフィ】Vampire / ヴァンパイア - COVER【 Airani iofifteen / Tsunomaki Watame 】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=pCle6CqymLY/">
+                        <div class="card-header">
+                          <h3>5:15 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/3.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">【 #わたフィ】Vampire / ヴァンパイア - COVER【 Airani iofifteen / Tsunomaki Watame 】</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/airani_iofifteen.png" width="100%" alt="Airani Iofifteen" title="Airani Iofifteen"></div>
+                            <div class="individualCharWrapper"><img src="../assets/talents/tsunomaki_watame.png" width="100%" alt="Tsunomaki Watame" title="Tsunomaki Watame"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="【FREETALK】IT'S BEEN AWHILE!! HOWDY!!【Hololive Indonesia 2nd Gen】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=oXevTfTyCBg/">
+                        <div class="card-header">
+                          <h3>6:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/5.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">【FREETALK】IT'S BEEN AWHILE!! HOWDY!!【Hololive Indonesia 2nd Gen】</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/kureiji_ollie.png" width="100%" alt="Kureiji Ollie" title="Kureiji Ollie"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="【歌枠】暑い！歌うよほーーい！🎤singing stream【不知火フレア/ホロライブ】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=VvWHQc3HF0c/">
+                        <div class="card-header">
+                          <h3>7:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/6.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">【歌枠】暑い！歌うよほーーい！🎤singing stream【不知火フレア/ホロライブ】</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/shiranui_flare.png" width="100%" alt="Shiranui Flare" title="Shiranui Flare"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="吸血鬼が歌う-ヴァンパイア-/夜空メル(cover)" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=tftbi551s8Q/">
+                        <div class="card-header">
+                          <h3>7:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/7.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">吸血鬼が歌う-ヴァンパイア-/夜空メル(cover)</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/yozora_mel.png" width="100%" alt="Yozora Mel" title="Yozora Mel"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="【雑談枠】８月中盤！花火がしたい【律可/ホロスターズ】#りつすた" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=3NJx8Jmig_s/">
+                        <div class="card-header">
+                          <h3>9:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/8.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">【雑談枠】８月中盤！花火がしたい【律可/ホロスターズ】#りつすた</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/rikkaroid.png" width="100%" alt="Rikkaroid" title="Rikkaroid"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="【#マリころゲーム勝負】任天堂のいろんなゲーム8本勝負!!!【ホロライブ/宝鐘マリン/戌神ころね】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=Q0ZHcBn64sQ/">
+                        <div class="card-header">
+                          <h3>9:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/9.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">【#マリころゲーム勝負】任天堂のいろんなゲーム8本勝負!!!【ホロライブ/宝鐘マリン/戌神ころね】</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/houshou_marine.png" width="100%" alt="Houshou Marine" title="Houshou Marine"></div>
+                            <div class="individualCharWrapper"><img src="../assets/talents/inugami_korone.png" width="100%" alt="Inugami Korone" title="Inugami Korone"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="うたああああああああああああ【湊あくあ/ホロライブ】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=rY4giBtbtlo/">
+                        <div class="card-header">
+                          <h3>9:30 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/10.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">うたああああああああああああ【湊あくあ/ホロライブ】</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/minato_aqua.png" width="100%" alt="Minato Aqua" title="Minato Aqua"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="【WE WERE HERE TOO】ESCAPING TOGETHER WITH ANYA!! 【Hololive Indonesia 2nd Gen】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=NBJDM-M3F9M/">
+                        <div class="card-header">
+                          <h3>10:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/11.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">【WE WERE HERE TOO】ESCAPING TOGETHER WITH ANYA!! 【Hololive Indonesia 2nd Gen】</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/kureiji_ollie.png" width="100%" alt="Kureiji Ollie" title="Kureiji Ollie"></div>
+                            <div class="individualCharWrapper"><img src="../assets/talents/anya_melfissa.png" width="100%" alt="Anya Melfissa" title="Anya Melfissa"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="【ドラクエ5】本当に最後！！！！！！！全モンスターを絶っっっっっっっ対に仲間にする！！！！！ぺこ！【ホロライブ/兎田ぺこら】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=Z_vCNp77o6w/">
+                        <div class="card-header">
+                          <h3>11:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/12.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">【ドラクエ5】本当に最後！！！！！！！全モンスターを絶っっっっっっっ対に仲間にする！！！！！ぺこ！【ホロライブ/兎田ぺこら】</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/usada_pekora.png" width="100%" alt="Usada Pekora" title="Kureiji Ollie"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="【APEX】パソコン新しくなったのできっとすごくぬるぬる動く【ホロライブ / 星街すいせい】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=Xn6fzMAOZFs/">
+                        <div class="card-header">
+                          <h3>11:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/13.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">【APEX】パソコン新しくなったのできっとすごくぬるぬる動く【ホロライブ / 星街すいせい】</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/hoshimachi_suisei.png" width="100%" alt="Hoshimachi Suisei" title="Hoshimachi Suisei"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="【AREA 15】Selamat Datang! Seberapa Dekatnya Anda Dengan Iofi?【iofi / イオフィ】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=qZnROlWoRM4/">
+                        <div class="card-header">
+                          <h3>12:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/14.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">【AREA 15】Selamat Datang! Seberapa Dekatnya Anda Dengan Iofi?【iofi / イオフィ】</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/airani_iofifteen.png" width="100%" alt="Airani Iofifteen" title="Airani Iofifteen"></div>
+                            <div class="individualCharWrapper"><img src="../assets/talents/ayunda_risu.png" width="100%" alt="Ayunda Risu" title="Ayunda Risu"></div>
+                            <div class="individualCharWrapper"><img src="../assets/talents/hoshinova_moona.png" width="100%" alt="Hoshinova Moona" title="Hoshinova Moona"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                    <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                      <a title="REDDIT SHITPOST REVIEW with IRyS!!" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=BOpCX9zf2iI/">
+                        <div class="card-header">
+                          <h3>13:00 </h3>
+                          <img src="../assets/social/youtube.png" alt="YouTube">
+                        </div>
+                        <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/15.jpg" alt="thumbnail">
+                        <div class="card-body">            
+                          <h3 class="overflow-hidden">REDDIT SHITPOST REVIEW with IRyS!!</h3>
+                        </div>
+                        <div class="card-footer">
+                          <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                            <div class="individualCharWrapper"><img src="../assets/talents/irys.png" width="100%" alt="IRyS" title="IRyS"></div>
+                            <!-- No encontré una buena foto transparente de Hachaama~ -->
+                            <div class="individualCharWrapper"><img src="../assets/talents/himemori_luna.png" width="100%" alt="Akai Haato" title="Akai Haato"></div>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Paro de agregar acá; ya se entiende la idea. -->
+                </div>
+              </div>
+          </article>
+
+          
+          <article class="day">
+            <div class="wow animate__animated animate__fadeInUp dateWrapper"><h2>08/15/2021</h2></div>
+            <div class="contentWrapper">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="SUPERインドネシア語クラスルーム withねねち #reinenechi【hololiveID 2nd gen】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=-xPB9ivpKoQ/">
+                      <div class="card-header">
+                        <h3>1:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/4.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">SUPERインドネシア語クラスルーム withねねち #reinenechi【hololiveID 2nd gen】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/pavolia_reine.png" width="100%" alt="Pavolia Reine" title="Pavolia Reine"></div>
+                          <!-- No encontré una buena foto transparente de Nene~ -->
+                          <div class="individualCharWrapper"><img src="../assets/talents/oozora_subaru.png" width="100%" alt="Oozora Subaru" title="Oozora Subaru"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【Karaoke!!】Casually singing!" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=nndLjEBzFFA/">
+                      <div class="card-header">
+                        <h3>1:30 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/1.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【Karaoke!!】Casually singing!</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/irys.png" width="100%" alt="IRyS" title="IRyS"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="ルルーシァ・ヴィ・ブイチューバー" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=sxJCyJpPvdA/">
+                      <div class="card-header">
+                        <h3>4:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/2.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">ルルーシァ・ヴィ・ブイチューバー</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <!-- No encontré una buena foto transparente de Rushia~ -->
+                          <div class="individualCharWrapper"><img src="../assets/talents/usada_pekora.png" width="100%" alt="Uruha Rushia" title="Uruha Rushia"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【 #わたフィ】Vampire / ヴァンパイア - COVER【 Airani iofifteen / Tsunomaki Watame 】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=pCle6CqymLY/">
+                      <div class="card-header">
+                        <h3>5:15 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/3.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【 #わたフィ】Vampire / ヴァンパイア - COVER【 Airani iofifteen / Tsunomaki Watame 】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/airani_iofifteen.png" width="100%" alt="Airani Iofifteen" title="Airani Iofifteen"></div>
+                          <div class="individualCharWrapper"><img src="../assets/talents/tsunomaki_watame.png" width="100%" alt="Tsunomaki Watame" title="Tsunomaki Watame"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【FREETALK】IT'S BEEN AWHILE!! HOWDY!!【Hololive Indonesia 2nd Gen】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=oXevTfTyCBg/">
+                      <div class="card-header">
+                        <h3>6:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/5.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【FREETALK】IT'S BEEN AWHILE!! HOWDY!!【Hololive Indonesia 2nd Gen】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/kureiji_ollie.png" width="100%" alt="Kureiji Ollie" title="Kureiji Ollie"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【歌枠】暑い！歌うよほーーい！🎤singing stream【不知火フレア/ホロライブ】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=VvWHQc3HF0c/">
+                      <div class="card-header">
+                        <h3>7:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/6.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【歌枠】暑い！歌うよほーーい！🎤singing stream【不知火フレア/ホロライブ】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/shiranui_flare.png" width="100%" alt="Shiranui Flare" title="Shiranui Flare"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="吸血鬼が歌う-ヴァンパイア-/夜空メル(cover)" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=tftbi551s8Q/">
+                      <div class="card-header">
+                        <h3>7:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/7.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">吸血鬼が歌う-ヴァンパイア-/夜空メル(cover)</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/yozora_mel.png" width="100%" alt="Yozora Mel" title="Yozora Mel"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【雑談枠】８月中盤！花火がしたい【律可/ホロスターズ】#りつすた" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=3NJx8Jmig_s/">
+                      <div class="card-header">
+                        <h3>9:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/8.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【雑談枠】８月中盤！花火がしたい【律可/ホロスターズ】#りつすた</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/rikkaroid.png" width="100%" alt="Rikkaroid" title="Rikkaroid"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【#マリころゲーム勝負】任天堂のいろんなゲーム8本勝負!!!【ホロライブ/宝鐘マリン/戌神ころね】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=Q0ZHcBn64sQ/">
+                      <div class="card-header">
+                        <h3>9:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/9.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【#マリころゲーム勝負】任天堂のいろんなゲーム8本勝負!!!【ホロライブ/宝鐘マリン/戌神ころね】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/houshou_marine.png" width="100%" alt="Houshou Marine" title="Houshou Marine"></div>
+                          <div class="individualCharWrapper"><img src="../assets/talents/inugami_korone.png" width="100%" alt="Inugami Korone" title="Inugami Korone"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="うたああああああああああああ【湊あくあ/ホロライブ】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=rY4giBtbtlo/">
+                      <div class="card-header">
+                        <h3>9:30 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/10.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">うたああああああああああああ【湊あくあ/ホロライブ】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/minato_aqua.png" width="100%" alt="Minato Aqua" title="Minato Aqua"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【WE WERE HERE TOO】ESCAPING TOGETHER WITH ANYA!! 【Hololive Indonesia 2nd Gen】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=NBJDM-M3F9M/">
+                      <div class="card-header">
+                        <h3>10:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/11.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【WE WERE HERE TOO】ESCAPING TOGETHER WITH ANYA!! 【Hololive Indonesia 2nd Gen】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/kureiji_ollie.png" width="100%" alt="Kureiji Ollie" title="Kureiji Ollie"></div>
+                          <div class="individualCharWrapper"><img src="../assets/talents/anya_melfissa.png" width="100%" alt="Anya Melfissa" title="Anya Melfissa"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【ドラクエ5】本当に最後！！！！！！！全モンスターを絶っっっっっっっ対に仲間にする！！！！！ぺこ！【ホロライブ/兎田ぺこら】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=Z_vCNp77o6w/">
+                      <div class="card-header">
+                        <h3>11:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/12.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【ドラクエ5】本当に最後！！！！！！！全モンスターを絶っっっっっっっ対に仲間にする！！！！！ぺこ！【ホロライブ/兎田ぺこら】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/usada_pekora.png" width="100%" alt="Usada Pekora" title="Kureiji Ollie"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【APEX】パソコン新しくなったのできっとすごくぬるぬる動く【ホロライブ / 星街すいせい】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=Xn6fzMAOZFs/">
+                      <div class="card-header">
+                        <h3>11:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/13.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【APEX】パソコン新しくなったのできっとすごくぬるぬる動く【ホロライブ / 星街すいせい】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/hoshimachi_suisei.png" width="100%" alt="Hoshimachi Suisei" title="Hoshimachi Suisei"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【AREA 15】Selamat Datang! Seberapa Dekatnya Anda Dengan Iofi?【iofi / イオフィ】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=qZnROlWoRM4/">
+                      <div class="card-header">
+                        <h3>12:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/14.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【AREA 15】Selamat Datang! Seberapa Dekatnya Anda Dengan Iofi?【iofi / イオフィ】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/airani_iofifteen.png" width="100%" alt="Airani Iofifteen" title="Airani Iofifteen"></div>
+                          <div class="individualCharWrapper"><img src="../assets/talents/ayunda_risu.png" width="100%" alt="Ayunda Risu" title="Ayunda Risu"></div>
+                          <div class="individualCharWrapper"><img src="../assets/talents/hoshinova_moona.png" width="100%" alt="Hoshinova Moona" title="Hoshinova Moona"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="REDDIT SHITPOST REVIEW with IRyS!!" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=BOpCX9zf2iI/">
+                      <div class="card-header">
+                        <h3>13:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/15.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">REDDIT SHITPOST REVIEW with IRyS!!</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/irys.png" width="100%" alt="IRyS" title="IRyS"></div>
+                          <!-- No encontré una buena foto transparente de Hachaama~ -->
+                          <div class="individualCharWrapper"><img src="../assets/talents/himemori_luna.png" width="100%" alt="Akai Haato" title="Akai Haato"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- Paro de agregar acá; ya se entiende la idea. -->
+              </div>
+            </div>
+        </article>
+
+          <article class="day lastDay">
+            <div class="wow animate__animated animate__fadeInUp dateWrapper"><h2>08/16/2021</h2></div>
+            <div class="contentWrapper">
+              <div class="row justify-content-center">
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="SUPERインドネシア語クラスルーム withねねち #reinenechi【hololiveID 2nd gen】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=-xPB9ivpKoQ/">
+                      <div class="card-header">
+                        <h3>1:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/4.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">SUPERインドネシア語クラスルーム withねねち #reinenechi【hololiveID 2nd gen】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/pavolia_reine.png" width="100%" alt="Pavolia Reine" title="Pavolia Reine"></div>
+                          <!-- No encontré una buena foto transparente de Nene~ -->
+                          <div class="individualCharWrapper"><img src="../assets/talents/oozora_subaru.png" width="100%" alt="Oozora Subaru" title="Oozora Subaru"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【Karaoke!!】Casually singing!" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=nndLjEBzFFA/">
+                      <div class="card-header">
+                        <h3>1:30 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/1.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【Karaoke!!】Casually singing!</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/irys.png" width="100%" alt="IRyS" title="IRyS"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="ルルーシァ・ヴィ・ブイチューバー" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=sxJCyJpPvdA/">
+                      <div class="card-header">
+                        <h3>4:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/2.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">ルルーシァ・ヴィ・ブイチューバー</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <!-- No encontré una buena foto transparente de Rushia~ -->
+                          <div class="individualCharWrapper"><img src="../assets/talents/usada_pekora.png" width="100%" alt="Uruha Rushia" title="Uruha Rushia"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【 #わたフィ】Vampire / ヴァンパイア - COVER【 Airani iofifteen / Tsunomaki Watame 】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=pCle6CqymLY/">
+                      <div class="card-header">
+                        <h3>5:15 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/3.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【 #わたフィ】Vampire / ヴァンパイア - COVER【 Airani iofifteen / Tsunomaki Watame 】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/airani_iofifteen.png" width="100%" alt="Airani Iofifteen" title="Airani Iofifteen"></div>
+                          <div class="individualCharWrapper"><img src="../assets/talents/tsunomaki_watame.png" width="100%" alt="Tsunomaki Watame" title="Tsunomaki Watame"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【FREETALK】IT'S BEEN AWHILE!! HOWDY!!【Hololive Indonesia 2nd Gen】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=oXevTfTyCBg/">
+                      <div class="card-header">
+                        <h3>6:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/5.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【FREETALK】IT'S BEEN AWHILE!! HOWDY!!【Hololive Indonesia 2nd Gen】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/kureiji_ollie.png" width="100%" alt="Kureiji Ollie" title="Kureiji Ollie"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【歌枠】暑い！歌うよほーーい！🎤singing stream【不知火フレア/ホロライブ】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=VvWHQc3HF0c/">
+                      <div class="card-header">
+                        <h3>7:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/6.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【歌枠】暑い！歌うよほーーい！🎤singing stream【不知火フレア/ホロライブ】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/shiranui_flare.png" width="100%" alt="Shiranui Flare" title="Shiranui Flare"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="吸血鬼が歌う-ヴァンパイア-/夜空メル(cover)" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=tftbi551s8Q/">
+                      <div class="card-header">
+                        <h3>7:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/7.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">吸血鬼が歌う-ヴァンパイア-/夜空メル(cover)</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/yozora_mel.png" width="100%" alt="Yozora Mel" title="Yozora Mel"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【雑談枠】８月中盤！花火がしたい【律可/ホロスターズ】#りつすた" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=3NJx8Jmig_s/">
+                      <div class="card-header">
+                        <h3>9:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/8.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【雑談枠】８月中盤！花火がしたい【律可/ホロスターズ】#りつすた</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/rikkaroid.png" width="100%" alt="Rikkaroid" title="Rikkaroid"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【#マリころゲーム勝負】任天堂のいろんなゲーム8本勝負!!!【ホロライブ/宝鐘マリン/戌神ころね】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=Q0ZHcBn64sQ/">
+                      <div class="card-header">
+                        <h3>9:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/9.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【#マリころゲーム勝負】任天堂のいろんなゲーム8本勝負!!!【ホロライブ/宝鐘マリン/戌神ころね】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/houshou_marine.png" width="100%" alt="Houshou Marine" title="Houshou Marine"></div>
+                          <div class="individualCharWrapper"><img src="../assets/talents/inugami_korone.png" width="100%" alt="Inugami Korone" title="Inugami Korone"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="うたああああああああああああ【湊あくあ/ホロライブ】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=rY4giBtbtlo/">
+                      <div class="card-header">
+                        <h3>9:30 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/10.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">うたああああああああああああ【湊あくあ/ホロライブ】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/minato_aqua.png" width="100%" alt="Minato Aqua" title="Minato Aqua"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-3 col-xl-2">
+                  <div class="wow animate__animated animate__fadeInUp overflow-hidden card">
+                    <a title="【WE WERE HERE TOO】ESCAPING TOGETHER WITH ANYA!! 【Hololive Indonesia 2nd Gen】" class="text-decoration-none" target="_blank" href="https://www.youtube.com/watch?v=NBJDM-M3F9M/">
+                      <div class="card-header">
+                        <h3>10:00 </h3>
+                        <img src="../assets/social/youtube.png" alt="YouTube">
+                      </div>
+                      <div class="wow animate__animated animate__fadeInUp overflow-hidden cardImgWrapper"></div><img width="100%" class="card-img-top" src="../assets/holoagenda/11.jpg" alt="thumbnail">
+                      <div class="card-body">            
+                        <h3 class="overflow-hidden">【WE WERE HERE TOO】ESCAPING TOGETHER WITH ANYA!! 【Hololive Indonesia 2nd Gen】</h3>
+                      </div>
+                      <div class="card-footer">
+                        <div class="d-flex justify-content-evenly flex-nowrap generalCharWrapper">
+                          <div class="individualCharWrapper"><img src="../assets/talents/kureiji_ollie.png" width="100%" alt="Kureiji Ollie" title="Kureiji Ollie"></div>
+                          <div class="individualCharWrapper"><img src="../assets/talents/anya_melfissa.png" width="100%" alt="Anya Melfissa" title="Anya Melfissa"></div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </article>
+      </section>
+
+      <footer>
+        <div class="footerContent">
+            <h3 class="wow animate__animated animate__fadeInUp">Ⓒ 2016 COVER Corp.</h3>   
+            <div class="wow animate__animated animate__fadeInUp footer--socialWrapper">
+            <a title="Bilibili" target="_blank" href="https://space.bilibili.com/286700005"><img src="../assets/social/bilibili.png" alt="Bilibili"></a>
+            <a title="Facebook" target="_blank" href="https://www.facebook.com/hololivetv/"><img src="../assets/social/facebook.png" alt="Facebook"></a>
+            <a title="Reddit" target="_blank" href="https://www.reddit.com/r/Hololive/"><img src="../assets/social/reddit.png" alt="Reddit"></a>
+            <a title="Twitter" target="_blank" href="https://twitter.com/hololivetv/"><img src="../assets/social/twitter.png" alt="Twitter"></a>
+            <a title="YouTube" target="_blank" href="https://www.youtube.com/channel/UCJFZiqLMntJufDCHc6bQixg/"><img src="../assets/social/youtube.png" alt="YouTube"></a>
+            </div>      
+        </div>    
+    </footer>   
+
+    <script src="../js/bootstrap/bootstrap.min.js"></script>
+    <script src="../js/popper/popper.min.js"></script>
+    <script src="../js/wow/wow.min.js"></script> 
+    <script src="../js/script.js"></script>
+</body>
+</html>
